@@ -1,0 +1,322 @@
+/* RESET v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  end of reset  */
+/* manager style */
+@font-face {
+	font-family: Delicious-Roman;
+	src: url('../Delicious-Roman.otf');
+}
+
+a:link {text-decoration: none; color:black;}
+a:visited {text-decoration: none; color:black;}
+a:active {text-decoration: none; color:black;}
+a:hover {text-decoration: none; color:black;}
+
+body {
+	font-family:Delicious-Roman;
+}
+
+#pizzaEditor{
+border: solid 2px orange;
+width:190px;
+position:absolute;
+top:5px;
+left:5px;
+z-index:9999;
+background:gray;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:6px;
+}
+
+#pizzaEditor span{
+color:#fff;
+font-family:Delicious-Roman;
+font-size:10pt;
+}
+
+.hidden{
+display:none;
+}
+
+.visible{
+display:block;
+}
+
+img#btnUpdate.save{
+float:right;
+}
+
+.close{
+position:absolute;
+right:-10px;
+top:-10px;
+}
+
+.unit{
+}
+
+.amounts{
+font-size:8pt;
+background: orange;
+color:white;
+display:inline-block;
+width:20px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 6px;
+}
+
+.editorIngredients{
+float:left;
+}
+
+
+#newpizza{
+float:left;
+width:750px;
+height:500px;
+position:relative;
+}
+
+#pizzaEditor ul li {
+display:inline;
+}
+
+#pizzaEditor ul {
+-moz-column-count: 3;
+-moz-column-gap: 1em;
+-moz-column-rule: 1px solid black;
+-webkit-column-count: 3;
+-webkit-column-gap: 1em;
+-webkit-column-rule: 1px solid black;
+}
+
+
+
+#newpizza ul {
+-moz-column-count: 3;
+-moz-column-gap: 1em;
+-moz-column-rule: 1px solid black;
+-webkit-column-count: 3;
+-webkit-column-gap: 1em;
+-webkit-column-rule: 1px solid black;
+}
+
+#newpizza li{
+font-size:10pt;
+display:block;
+margin:5px;
+color:gray;
+}
+
+#newpizza li img {
+float:right;
+position:relative;
+left:45px;
+}
+
+#newpizza .count {
+float:right;
+}
+#ingredients{
+border:solid 2px blue;
+float:right;
+width:300px;
+position:relative;
+-moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 6px;
+}
+
+
+
+
+#newingredients h2{
+margin-bottom:10px;
+}
+
+#newinfo{
+height:400px;
+width:200px;
+
+border:solid 2px green;
+-moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 6px;
+top:5px;
+left:5px;
+padding-left:5px;
+}
+
+
+#ingredients ul li{
+display:inline-block;
+margin: 5px;
+height:20px;
+padding:2px
+}
+
+#ingredients ul li:hover{
+border:solid 2px gray;
+-moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 6px;
+   cursor:pointer;
+}
+
+span.count {
+
+margin-left:50px;
+}
+
+img#btnSave{
+float:right;
+}
+
+#sidebar{
+position:fixed;
+right:10px;
+top:10px;
+height:550px;
+width:200px;
+border:solid 1px black;
+margin-left:20px;
+text-align:center;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-moz-box-shadow: 8px 8px 4px #888;
+-webkit-box-shadow: 8px 8px 4px #888;
+}
+
+#contents{
+position:absolute;
+left:10px;
+top:10px;
+height:550px;
+width:850px;
+border:1px solid black;
+-moz-border-radius:10px 0px 0px 10px;
+-webkit-border-radius:10px 0px 0px 10px;
+-moz-box-shadow: 8px 8px 4px #888;
+-webkit-box-shadow: 8px 8px 4px #888;
+overflow:auto;
+padding-left:3px;
+}
+
+#pizzaList{
+float:left;
+width:500px;
+height:500px;
+position:relative;
+padding-left:3px;
+}
+
+#pizzaList ul li{
+display:inline-block;
+width:100px;
+top:5px;
+position:relative;
+font-size:10pt;
+padding-top:3px;
+padding-bottom:3px;
+}
+
+div#topten h1 {
+	padding-bottom:5px;
+}
+
+#sidebar img:hover{
+cursor:pointer;
+}
+
+#topten{
+float:left;
+width:750px;
+height:300px;
+position:relative;
+}
+
+#ingredientManager{
+position:relative;
+padding-left:3px;
+margin-top:4px;
+margin-bottom:4px;
+}
+
+#ingredientManager table tr td,th{
+text-align:center;
+}
+
+#ingredientManager table tr:nth-child(odd) { 
+background-color:#eee; 
+}
+
+#ingredientManager table tr:nth-child(even) { 
+background-color:#fff; 
+}
+
+
+.button:hover{
+cursor:pointer;
+}
+
+.buttonDecrese:hover{
+cursor:pointer;
+}
+
+.buttonIncrease:hover{
+cursor:pointer;
+}

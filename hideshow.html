@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript" src="http://tablesorter.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+var Count;
+$(document).ready(function(){
+    Count= 5;
+    ShowItems();
+    $("#add").click(function(){
+        Count = Count + 5;
+        ShowItems();
+    });
+    $("#remove").click(function(){
+        Count = Count - 5;
+        ShowItems();
+    });
+});
+function ShowItems() {
+    if (Count > $("#list li").size()) { Count = $("#list li").size() };
+    $("#list li:lt(" + Count + ")").show();
+    $("#list li:gt(" + (Count - 1) + ")").hide();
+}
+</script>
+</head>
+<body>
+
+<div>
+<span id="add">[Show 5]</span>&nbsp;&nbsp;<span id="remove">[Hide 5]</span>
+</div>
+
+<ul id="list">
+    <li>01</li>
+    <li>02</li>
+    <li>03</li>
+    <li>04</li>
+    <li>05</li>
+    <li>06</li>
+    <li>07</li>
+    <li>08</li>
+    <li>09</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+</ul>
+
+</body>
+</html>

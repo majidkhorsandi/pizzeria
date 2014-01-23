@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pizzeria>
+  
+  
+<storage>
+    
+    <ingredient id="2" name="Cheese" in_storage="1"/>
+    <ingredient id="3" name="Mushroom" in_storage="0"/>
+    <ingredient id="4" name="Tunafish" in_storage="0"/>
+    <ingredient id="5" name="Onions" in_storage="1"/>
+    <ingredient id="6" name="Olives" in_storage="24"/>
+    <ingredient id="7" name="Pineapple" in_storage="167"/>
+    <ingredient id="8" name="Banana" in_storage="112"/>
+    
+    <ingredient id="10" name="Salami" in_storage="24"/>
+    <ingredient id="11" name="Shrimps" in_storage="74"/>
+    <ingredient id="12" name="Fresh Tomatos" in_storage="14"/>
+    <ingredient id="13" name="Tabasco" in_storage="12"/>
+    
+    <ingredient id="15" name="Paprika" in_storage="15"/>
+    <ingredient id="16" name="Gorgonzola" in_storage="11"/>
+    <ingredient id="17" name="Ham" in_storage="1"/>
+    <ingredient id="18" name="Eggs" in_storage="161"/>
+    <ingredient id="19" name="Chicken" in_storage="119"/>
+    <ingredient id="20" name="Kebab" in_storage="151"/>
+  </storage><menu>
+    <pizza id="5">
+      <name>Al tonno</name>
+      <description>A simple pie with Tunafish</description>
+      <popularity>50</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="4" units="4"/>
+      <ingredient id="5" units="2"/>
+    </pizza>
+    <pizza id="1">
+      <name>Margherita</name>
+      <description>The simple vegetarian choice</description>
+      <popularity>99</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="3"/>
+    </pizza>
+    <pizza id="8">
+      <name>Cappriciosa</name>
+      <description>A classic pizza with ham and mushrooms</description>
+      <popularity>450</popularity>
+      <ingredient id="1" units="1"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="17" units="3"/>
+      <ingredient id="3" units="2"/>
+    </pizza>
+    <pizza id="2">
+      <name>Al funghi</name>
+      <description>Prepared  with fresh mushrooms</description>
+      <popularity>143</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="3" units="2"/>
+    </pizza>
+    
+    <pizza id="4">
+      <name>Calzone</name>
+      <description>A very popular turnover Pizza.</description>
+      <popularity>646</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="17" units="3"/>
+    </pizza>
+    <pizza id="6">
+      <name>Opera</name>
+      <description/>
+      <popularity/>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="4" units="3"/>
+    </pizza>
+    <pizza id="7">
+      <name>Orientale</name>
+      <description/>
+      <popularity>345</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="14" units="3"/>
+      <ingredient id="5" units="2"/>
+    </pizza>
+    <pizza id="9">
+      <name>Campaniola</name>
+      <description/>
+      <popularity>2</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="10" units="1"/>
+      <ingredient id="6" units="2"/>
+      <ingredient id="5" units="2"/>
+    </pizza>
+    <pizza id="10">
+      <name>Pineapple</name>
+      <description>description</description>
+      <popularity>681</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="0"/>
+      <ingredient id="7" units="3"/>
+      <ingredient id="17" units=""/>
+    </pizza>
+    <pizza id="11">
+      <name>Banana</name>
+      <description/>
+      <popularity>233</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="8" units="2"/>
+      <ingredient id="17" units="2"/>
+    </pizza>
+    <pizza id="12">
+      <name>Sultan</name>
+      <description/>
+      <popularity>1</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="5" units="2"/>
+      <ingredient id="14" units="3"/>
+      <ingredient id="12" units="1"/>
+    </pizza>
+    <pizza id="13">
+      <name>Calamata</name>
+      <description/>
+      <popularity>212</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="4" units="2"/>
+      <ingredient id="11" units="1"/>
+    </pizza>
+    <pizza id="14">
+      <name>Natali</name>
+      <description/>
+      <popularity>34</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="10" units="1"/>
+      <ingredient id="3" units="1"/>
+      <ingredient id="6" units="1"/>
+    </pizza>
+    <pizza id="15">
+      <name>Orientale special</name>
+      <description/>
+      <popularity>93</popularity>
+      <ingredient id="1" units="3"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="14" units="3"/>
+      <ingredient id="18" units="1"/>
+      <ingredient id="5" units="2"/>
+    </pizza>
+    <pizza id="16">
+      <name>Hawaii</name>
+      <description>description</description>
+      <popularity>250</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="0"/>
+      <ingredient id="17" units="0"/>
+      <ingredient id="8" units="1"/>
+      <ingredient id="7" units="1"/>
+      <ingredient id="9" units="1"/>
+    </pizza>
+    <pizza id="17">
+      <name>Bussola</name>
+      <description/>
+      <popularity>342</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="17" units="3"/>
+      <ingredient id="11" units="2"/>
+    </pizza>
+    <pizza id="18">
+      <name>Du chef</name>
+      <description/>
+      <popularity>565</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="14" units="2"/>
+      <ingredient id="3" units="2"/>
+      <ingredient id="13" units="1"/>
+      <ingredient id="5" units="2"/>
+    </pizza>
+    <pizza id="20">
+      <name>Romana</name>
+      <description/>
+      <popularity>74</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="11" units="3"/>
+      <ingredient id="3" units="2"/>
+    </pizza>
+    <pizza id="21">
+      <name>La Bella</name>
+      <description/>
+      <popularity>344</popularity>
+      <ingredient id="1" units="2"/>
+      <ingredient id="2" units="2"/>
+      <ingredient id="10" units="3"/>
+      <ingredient id="3" units="2"/>
+    </pizza>
+    
+    <pizza id="47">
+      <name>Texas</name>
+      <description>American pan pizza</description>
+      <popularity>282</popularity>
+      <ingredient id="1" units="3"/>
+      <ingredient id="2" units="4"/>
+      <ingredient id="10" units="4"/>
+      <ingredient id="16" units="3"/>
+      <ingredient id="15" units="1"/>
+    </pizza>
+    <pizza id="48">
+      <name>Boston</name>
+      <description>American pan pizza</description>
+      <popularity>284</popularity>
+      <ingredient id="1" units="3"/>
+      <ingredient id="2" units="4"/>
+      <ingredient id="4" units="3"/>
+      <ingredient id="11" units="2"/>
+      <ingredient id="16" units="1"/>
+    </pizza>
+  <pizza id="49"><name>fdgdfg</name><description>sgg</description><popularity>0</popularity><ingredient id="11" units="2"/><ingredient id="12" units="4"/></pizza></menu></pizzeria>

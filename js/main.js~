@@ -1,0 +1,71 @@
+$(document).ready(function(){
+	
+		//$('#edit').click(function(){
+		
+		//$(this).appendTo('<span id="txtName" >salam</span></br>');
+		
+		
+  			
+    	 var sliceid;
+    	  var sliceName;
+    	 var startpos;
+    	 var endpos;
+       var images = $(".container ul li img"),  
+       title = $("title").text() || document.title;  
+    
+       //make images draggable  
+       images.draggable({
+       	cursorAt: ($.browser.webkit)?{left: -10, top: 30 }:{left: -10, top: 30 },   
+			zIndex: 99999,
+			start: function() {sliceid = $(this).parent().attr('id');sliceName = $(this).attr('id')  },
+			revert: 'valid'
+       });  
+   
+   
+
+	
+	$("#shoppingcart").droppable({
+ 		 drop: function(event, ui) {
+ 		 $('#cart ul li.message').fadeOut('slow');
+ 		 $('#cart ul').append('<li id="' + sliceid + '"><span>' + sliceName + '</span><img class="button" id="btnRemove" src="images/edit_delete.png"/></li>');
+    // unset removeMe flag as child is still inside parent
+	 	 $('#btnRemove').live("click", function() {$(this).parent().remove()});	 
+	 	 $(this).attr("src" , "images/Shoppingcartfull.png") ;
+   		ui.helper.removeMe = false;	
+ 		 }
+	});
+	
+
+	$('#checkout').click(function(){
+		arrayIDs = new Array;
+		var $count = 0;
+		$(this).parent().find("ul li").each(function() {
+    
+     	 	
+			if($(this).attr('class') != 'message') {
+				$count ++;
+             arrayIDs.push($(this).attr('id'));
+          }                       
+   });
+   
+   if ($count > 0){
+   	$.post("order.php", { ids : arrayIDs  }, function(data) {
+			data = data.substring(0,4);  			
+  			if (data == "true"){
+  				$('#checkout').parent().find("ul").html('<li class="message"><span style="color:orange;" > thank you for your shop!<span></li>');
+
+  			} else{
+  				$('#checkout').parent().find("ul").html('<li class="message"><span style="color:red;" >sorry!,not enough ingredients.<span></li>');
+
+			}
+			
+		});
+		
+		$("#shoppingcart").attr("src" , "images/Shoppingcart.png");
+   	}else{
+		$(this).parent().find("ul").html('<li class="message"><span style="color:red;" >please select one pizza at least<span></li>');
+		
+	}
+	});
+
+});

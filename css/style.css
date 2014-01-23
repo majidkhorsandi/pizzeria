@@ -1,0 +1,219 @@
+/* RESET v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  end of reset  */
+
+
+
+
+
+@font-face {
+	font-family: Delicious-Roman;
+	src: url('../Delicious-Roman.otf');
+}
+
+ul {
+	padding-left:5px;
+}
+
+span.pizzaName {
+	position:relative;	
+	left:-5px;
+}
+
+div#menuBar {
+	margin-top:15px;
+}
+h1 {
+	position:relative;
+	font-family:Delicious-Roman;
+	font-size:25px;
+	left:5px;
+	padding-bottom:5px;
+}
+
+div#top10 li {
+	display: block;
+	font-family:Delicious-Roman;
+	padding-left:3px;
+	text-decoration:none;
+}
+
+li {
+	display: block;
+	font-family:Delicious-Roman;
+	padding-left:5px;
+	text-decoration:none;
+}
+
+a:link {text-decoration: none; color:black;}
+a:visited {text-decoration: none; color:black;}
+a:active {text-decoration: none; color:black;}
+a:hover {text-decoration: none; color:black;}
+
+li a:hover{
+	text-decoration:none;
+	color:red;
+}
+
+div#top10 {
+	position:fixed;
+	right:20px;
+	border:2px solid black;
+	width:180px;
+	height:195px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-box-shadow: 8px 8px 4px #888;
+	-webkit-box-shadow: 8px 8px 4px #888;
+	padding: 2px 2px 2px 2px;
+	z-index:9999;
+}
+
+div#cart {
+	position:fixed;
+	margin-top:225px;
+	right:20px;
+	border:2px solid black;
+	width:180px;
+	height:195px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-box-shadow: 8px 8px 4px #888;
+	-webkit-box-shadow: 8px 8px 4px #888;
+	padding: 2px 2px 2px 2px;
+	z-index:9999;
+}
+
+div#cart img#btnRemove{
+margin-left:30px;
+float:right;
+}
+
+div#cart #shoppingcart {
+	position:absolute;
+	top:210px;
+	left:25px;
+	z-index:99999;
+}
+
+div#cart #checkout {
+	position:absolute;
+	top:175px;
+	left:40px;
+}
+
+div.container li {
+	display:inline;
+	float:left;
+	padding-left:5px;
+	width:75px;
+	height:75px;
+	border: 1px solid #999;
+	margin: 15px 25px 25px 10px;
+}
+
+div.container ul li img {
+	z-index:1;
+	width:75px;
+	height:75px;
+}
+
+div.container {
+	display:block;
+	position:absolute;
+	top:15px;
+	height:480px;
+	width:710px;
+	border:2px solid black;
+	padding-left:10px;
+	margin-left:320px;	
+	margin-right:345px;
+}
+
+div#info {
+	position:absolute;
+	top:20px;
+	left:15px;
+	font-family:Delicious-Roman;
+	font-size:1em;
+}
+div#info span {
+	text-decoration:none;
+}
+
+div#info p {
+	text-decoration:underline;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+div#info h1 {
+	position:relative;
+	left:-0px;
+	color:blue;
+	text-decoration:none;
+}
+
+.hidden{
+
+display:none;
+border: solid 2px red;
+width:500px;
+height:300px;
+
+}
+
+.button:hover{
+cursor:pointer;
+}
