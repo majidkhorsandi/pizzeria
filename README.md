@@ -1,4 +1,4 @@
 pizzeria 2.0
 ========
 
-Hi all! hejda alla
+And that was it folk!
